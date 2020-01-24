@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="HelveticaNeue.ttc">
-            <string>HelveticaNeue</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="sample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="S8Z-9W-VFw"/>
                         <viewControllerLayoutGuide type="bottom" id="oIc-bH-nd3"/>
@@ -28,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYR-85-aVo">
-                                <rect key="frame" x="16" y="60" width="32" height="32"/>
+                                <rect key="frame" x="16" y="40" width="32" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="bhD-ki-lXa"/>
                                     <constraint firstAttribute="width" constant="32" id="kNT-yJ-fwk"/>
@@ -36,11 +28,11 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                 <state key="normal" image="button_start"/>
                                 <connections>
-                                    <action selector="start:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fmk-b3-WFP"/>
+                                    <action selector="start:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="cTw-aa-W8K"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nml-cF-S5F">
-                                <rect key="frame" x="62" y="60" width="32" height="32"/>
+                                <rect key="frame" x="62" y="40" width="32" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="32" id="4iB-SL-h31"/>
                                     <constraint firstAttribute="height" constant="32" id="fgy-h2-DuG"/>
@@ -48,15 +40,16 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                 <state key="normal" image="button_pause"/>
                                 <connections>
-                                    <action selector="stop:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="HbA-lw-TFY"/>
+                                    <action selector="stop:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="jSd-zt-IAV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f10-YK-LxL">
-                                <rect key="frame" x="102" y="61" width="70" height="30"/>
+                                <rect key="frame" x="102" y="41" width="70" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="8mK-vy-WRb"/>
                                     <constraint firstAttribute="width" constant="70" id="d9q-jO-GPT"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Bounce"/>
                                 <connections>
                                     <action selector="bounce:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="NoX-h9-4v3"/>
@@ -88,7 +81,7 @@
                                     <constraint firstAttribute="width" constant="100" id="yEi-6F-FiS"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Speed Control" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uUL-gO-9NR">
@@ -98,18 +91,17 @@
                                     <constraint firstAttribute="height" constant="21" id="nec-WK-AuW"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qfg-aF-DEe">
                                 <rect key="frame" x="39" y="242" width="51" height="31"/>
-                                <color key="onTintColor" red="0.0" green="0.0" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="reverb:" destination="vXZ-lx-hvc" eventType="valueChanged" id="eQd-yj-IDJ"/>
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VbH-Lf-XLP">
                                 <rect key="frame" x="163" y="242" width="51" height="31"/>
-                                <color key="onTintColor" red="0.0" green="0.0" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="chorus:" destination="vXZ-lx-hvc" eventType="valueChanged" id="0kq-SA-LOm"/>
                                 </connections>
@@ -121,7 +113,7 @@
                                     <constraint firstAttribute="width" constant="136" id="hu4-s7-Oic"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Chorus On / Off" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZZ-qb-Iem">
@@ -131,11 +123,11 @@
                                     <constraint firstAttribute="width" constant="136" id="W9W-wf-E84"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="zZZ-qb-Iem" firstAttribute="top" secondItem="VbH-Lf-XLP" secondAttribute="bottom" constant="8" id="1g8-pf-Gsu"/>
                             <constraint firstAttribute="leadingMargin" secondItem="LyC-86-I6s" secondAttribute="leading" id="4oB-XB-1ug"/>
@@ -172,12 +164,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="33.5" y="58.5"/>
+            <point key="canvasLocation" x="-15" y="0.0"/>
         </scene>
     </scenes>
     <resources>
         <image name="button_pause" width="64" height="64"/>
         <image name="button_start" width="64" height="64"/>
     </resources>
-    <color key="tintColor" red="0.0" green="0.0" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

@@ -3,28 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E802E8B723C5C9740047F018 /* BssynthPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E802E8B623C5C9740047F018 /* BssynthPlayer.swift */; };
 		E82B263B1E1DEC4F00AE8716 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8B6E52C1E1DDEDF0028DC71 /* Launch Screen.storyboard */; };
+		E83F597C23D96F1200EC3A3F /* BssynthDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83F597B23D96F1200EC3A3F /* BssynthDriver.swift */; };
+		E83F597F23D9776000EC3A3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83F597E23D9776000EC3A3F /* AppDelegate.swift */; };
+		E83F598223D99ADB00EC3A3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83F598123D99ADB00EC3A3F /* ViewController.swift */; };
+		E83F598623DA6F6F00EC3A3F /* bssynth_key.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83F598523DA6EB000EC3A3F /* bssynth_key.swift */; };
+		E83F598723DA6F6F00EC3A3F /* bssynth_key.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83F598523DA6EB000EC3A3F /* bssynth_key.swift */; };
 		E857CE8F180387110088D963 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E857CE8E180387110088D963 /* Foundation.framework */; };
 		E857CE91180387110088D963 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E857CE90180387110088D963 /* CoreGraphics.framework */; };
 		E857CE93180387110088D963 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E857CE92180387110088D963 /* UIKit.framework */; };
-		E857CE99180387110088D963 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E857CE97180387110088D963 /* InfoPlist.strings */; };
-		E857CE9B180387110088D963 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E857CE9A180387110088D963 /* main.m */; };
-		E857CE9F180387110088D963 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E857CE9E180387110088D963 /* AppDelegate.m */; };
 		E857CEA2180387110088D963 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E857CEA0180387110088D963 /* Main.storyboard */; };
-		E857CEA5180387110088D963 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E857CEA4180387110088D963 /* ViewController.m */; };
 		E857CEA7180387110088D963 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E857CEA6180387110088D963 /* Images.xcassets */; };
 		E857CEC8180387340088D963 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E857CE8E180387110088D963 /* Foundation.framework */; };
 		E857CEC9180387340088D963 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E857CE90180387110088D963 /* CoreGraphics.framework */; };
 		E857CECA180387340088D963 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E857CE92180387110088D963 /* UIKit.framework */; };
-		E857CED0180387350088D963 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E857CECE180387350088D963 /* InfoPlist.strings */; };
-		E857CED2180387350088D963 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E857CED1180387350088D963 /* main.m */; };
-		E857CED6180387350088D963 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E857CED5180387350088D963 /* AppDelegate.m */; };
 		E857CED9180387350088D963 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E857CED7180387350088D963 /* Main.storyboard */; };
-		E857CEDC180387350088D963 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E857CEDB180387350088D963 /* ViewController.m */; };
 		E857CEDE180387350088D963 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E857CEDD180387350088D963 /* Images.xcassets */; };
 		E857CF10180461EE0088D963 /* GeneralUser GS SoftSynth v1.44.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = E857CF07180461DE0088D963 /* GeneralUser GS SoftSynth v1.44.sf2 */; };
 		E857CF11180461EF0088D963 /* GeneralUser GS SoftSynth v1.44.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = E857CF07180461DE0088D963 /* GeneralUser GS SoftSynth v1.44.sf2 */; };
@@ -36,35 +34,28 @@
 		E86A9D0A180E35C400746BF9 /* libbsmpd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E86A9D07180E35C400746BF9 /* libbsmpd.a */; };
 		E86A9D0B180E35C400746BF9 /* libbsse.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E86A9D08180E35C400746BF9 /* libbsse.a */; };
 		E86A9D0C180E35C400746BF9 /* libbsse.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E86A9D08180E35C400746BF9 /* libbsse.a */; };
+		E8ADAAE02382D591000EF5E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8ADAADF2382D591000EF5E5 /* AppDelegate.swift */; };
+		E8ADAAE62382E233000EF5E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8ADAAE52382E233000EF5E5 /* ViewController.swift */; };
 		E8B6E5311E1DDFC30028DC71 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8B6E52F1E1DDFC30028DC71 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E802E8B623C5C9740047F018 /* BssynthPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BssynthPlayer.swift; sourceTree = "<group>"; };
+		E83F597B23D96F1200EC3A3F /* BssynthDriver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BssynthDriver.swift; sourceTree = "<group>"; };
+		E83F597E23D9776000EC3A3F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E83F598123D99ADB00EC3A3F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E83F598523DA6EB000EC3A3F /* bssynth_key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bssynth_key.swift; sourceTree = "<group>"; };
 		E857CE8B180387110088D963 /* sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E857CE8E180387110088D963 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E857CE90180387110088D963 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		E857CE92180387110088D963 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E857CE96180387110088D963 /* sample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "sample-Info.plist"; sourceTree = "<group>"; };
-		E857CE98180387110088D963 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E857CE9A180387110088D963 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E857CE9C180387110088D963 /* sample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sample-Prefix.pch"; sourceTree = "<group>"; };
-		E857CE9D180387110088D963 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		E857CE9E180387110088D963 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E857CEA1180387110088D963 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E857CEA3180387110088D963 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E857CEA4180387110088D963 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E857CEA6180387110088D963 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E857CEAD180387110088D963 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		E857CEC7180387340088D963 /* sample2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sample2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E857CECD180387350088D963 /* sample2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "sample2-Info.plist"; sourceTree = "<group>"; };
-		E857CECF180387350088D963 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E857CED1180387350088D963 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E857CED3180387350088D963 /* sample2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sample2-Prefix.pch"; sourceTree = "<group>"; };
-		E857CED4180387350088D963 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		E857CED5180387350088D963 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E857CED8180387350088D963 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E857CEDA180387350088D963 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E857CEDB180387350088D963 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E857CEDD180387350088D963 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E857CEF9180461D60088D963 /* bsmd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bsmd.h; sourceTree = "<group>"; };
 		E857CEFA180461D60088D963 /* bsmp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bsmp.h; sourceTree = "<group>"; };
@@ -88,6 +79,10 @@
 		E857CF1C1804DBFC0088D963 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		E86A9D07180E35C400746BF9 /* libbsmpd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libbsmpd.a; sourceTree = "<group>"; };
 		E86A9D08180E35C400746BF9 /* libbsse.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libbsse.a; sourceTree = "<group>"; };
+		E8ADAADB2382D557000EF5E5 /* sample2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sample2-Bridging-Header.h"; sourceTree = "<group>"; };
+		E8ADAADE2382D590000EF5E5 /* sample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sample-Bridging-Header.h"; sourceTree = "<group>"; };
+		E8ADAADF2382D591000EF5E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E8ADAAE52382E233000EF5E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E8B6E52D1E1DDEDF0028DC71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
 		E8B6E5301E1DDFC30028DC71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
 		E8FCEC2418100DF900FAD134 /* libbsmpd_specification_eng.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = libbsmpd_specification_eng.pdf; sourceTree = "<group>"; };
@@ -162,12 +157,11 @@
 		E857CE94180387110088D963 /* sample */ = {
 			isa = PBXGroup;
 			children = (
-				E857CE9D180387110088D963 /* AppDelegate.h */,
-				E857CE9E180387110088D963 /* AppDelegate.m */,
+				E8ADAADF2382D591000EF5E5 /* AppDelegate.swift */,
+				E8ADAAE52382E233000EF5E5 /* ViewController.swift */,
 				E8B6E52C1E1DDEDF0028DC71 /* Launch Screen.storyboard */,
 				E857CEA0180387110088D963 /* Main.storyboard */,
-				E857CEA3180387110088D963 /* ViewController.h */,
-				E857CEA4180387110088D963 /* ViewController.m */,
+				E802E8B623C5C9740047F018 /* BssynthPlayer.swift */,
 				E857CEA6180387110088D963 /* Images.xcassets */,
 				E857CE95180387110088D963 /* Supporting Files */,
 			);
@@ -178,9 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				E857CE96180387110088D963 /* sample-Info.plist */,
-				E857CE97180387110088D963 /* InfoPlist.strings */,
-				E857CE9A180387110088D963 /* main.m */,
-				E857CE9C180387110088D963 /* sample-Prefix.pch */,
+				E8ADAADE2382D590000EF5E5 /* sample-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -188,12 +180,11 @@
 		E857CECB180387340088D963 /* sample2 */ = {
 			isa = PBXGroup;
 			children = (
-				E857CED4180387350088D963 /* AppDelegate.h */,
-				E857CED5180387350088D963 /* AppDelegate.m */,
+				E83F597E23D9776000EC3A3F /* AppDelegate.swift */,
+				E83F598123D99ADB00EC3A3F /* ViewController.swift */,
 				E8B6E52F1E1DDFC30028DC71 /* Launch Screen.storyboard */,
 				E857CED7180387350088D963 /* Main.storyboard */,
-				E857CEDA180387350088D963 /* ViewController.h */,
-				E857CEDB180387350088D963 /* ViewController.m */,
+				E83F597B23D96F1200EC3A3F /* BssynthDriver.swift */,
 				E857CEDD180387350088D963 /* Images.xcassets */,
 				E857CECC180387350088D963 /* Supporting Files */,
 			);
@@ -204,9 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				E857CECD180387350088D963 /* sample2-Info.plist */,
-				E857CECE180387350088D963 /* InfoPlist.strings */,
-				E857CED1180387350088D963 /* main.m */,
-				E857CED3180387350088D963 /* sample2-Prefix.pch */,
+				E8ADAADB2382D557000EF5E5 /* sample2-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -217,6 +206,7 @@
 				E8FCEC2318100DF900FAD134 /* document */,
 				E857CEF9180461D60088D963 /* bsmd.h */,
 				E857CEFA180461D60088D963 /* bsmp.h */,
+				E83F598523DA6EB000EC3A3F /* bssynth_key.swift */,
 				E86A9D07180E35C400746BF9 /* libbsmpd.a */,
 				E86A9D08180E35C400746BF9 /* libbsse.a */,
 				E857CEFD180461D60088D963 /* sample.mid */,
@@ -314,11 +304,19 @@
 		E857CE83180387110088D963 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1110;
-				ORGANIZATIONNAME = bismark;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "bismark LLC";
+				TargetAttributes = {
+					E857CE8A180387110088D963 = {
+						LastSwiftMigration = 1110;
+					};
+					E857CEC6180387340088D963 = {
+						LastSwiftMigration = 1110;
+					};
+				};
 			};
 			buildConfigurationList = E857CE86180387110088D963 /* Build configuration list for PBXProject "sample" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -344,7 +342,6 @@
 				E82B263B1E1DEC4F00AE8716 /* Launch Screen.storyboard in Resources */,
 				E857CEA7180387110088D963 /* Images.xcassets in Resources */,
 				E857CF10180461EE0088D963 /* GeneralUser GS SoftSynth v1.44.sf2 in Resources */,
-				E857CE99180387110088D963 /* InfoPlist.strings in Resources */,
 				E857CEA2180387110088D963 /* Main.storyboard in Resources */,
 				E857CF16180461FD0088D963 /* sample.mid in Resources */,
 			);
@@ -356,7 +353,6 @@
 			files = (
 				E857CEDE180387350088D963 /* Images.xcassets in Resources */,
 				E857CF11180461EF0088D963 /* GeneralUser GS SoftSynth v1.44.sf2 in Resources */,
-				E857CED0180387350088D963 /* InfoPlist.strings in Resources */,
 				E8B6E5311E1DDFC30028DC71 /* Launch Screen.storyboard in Resources */,
 				E857CED9180387350088D963 /* Main.storyboard in Resources */,
 			);
@@ -369,9 +365,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E857CEA5180387110088D963 /* ViewController.m in Sources */,
-				E857CE9F180387110088D963 /* AppDelegate.m in Sources */,
-				E857CE9B180387110088D963 /* main.m in Sources */,
+				E8ADAAE62382E233000EF5E5 /* ViewController.swift in Sources */,
+				E802E8B723C5C9740047F018 /* BssynthPlayer.swift in Sources */,
+				E8ADAAE02382D591000EF5E5 /* AppDelegate.swift in Sources */,
+				E83F598623DA6F6F00EC3A3F /* bssynth_key.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,37 +376,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E857CEDC180387350088D963 /* ViewController.m in Sources */,
-				E857CED6180387350088D963 /* AppDelegate.m in Sources */,
-				E857CED2180387350088D963 /* main.m in Sources */,
+				E83F598223D99ADB00EC3A3F /* ViewController.swift in Sources */,
+				E83F597C23D96F1200EC3A3F /* BssynthDriver.swift in Sources */,
+				E83F597F23D9776000EC3A3F /* AppDelegate.swift in Sources */,
+				E83F598723DA6F6F00EC3A3F /* bssynth_key.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E857CE97180387110088D963 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E857CE98180387110088D963 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		E857CEA0180387110088D963 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				E857CEA1180387110088D963 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E857CECE180387350088D963 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E857CECF180387350088D963 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 		E857CED7180387350088D963 /* Main.storyboard */ = {
@@ -485,7 +467,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -530,8 +512,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -540,15 +523,24 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "sample/sample-Prefix.pch";
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "sample/sample-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/bssynth\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.bismark.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "sample/sample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -557,15 +549,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "sample/sample-Prefix.pch";
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "sample/sample-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/bssynth\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.bismark.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "sample/sample-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -574,19 +574,28 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "sample2/sample2-Prefix.pch";
+				GCC_PREFIX_HEADER = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "sample2/sample2-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/bssynth\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.bismark.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "sample2/sample2-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -595,15 +604,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "sample2/sample2-Prefix.pch";
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "sample2/sample2-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/bssynth\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.bismark.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "sample2/sample2-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
