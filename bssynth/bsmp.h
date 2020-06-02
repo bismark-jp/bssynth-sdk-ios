@@ -1,6 +1,6 @@
 /* bsmp.h - bssynth MIDI Player Library */
 
-/* Copyright (c) 2002-2013 bismark */
+/* Copyright (c) 2002 - 2019 bismark LLC. All rights reserved */
 
 /*
 modification history
@@ -107,7 +107,7 @@ typedef enum
 	BSMP_CTRL_SET_POLY = 210,
 	BSMP_CTRL_GET_POLY,
 
-	/* crse controls: 10000 - 19999 */
+	/* bsse controls: 10000 - 19999 */
 	BSMP_CTRL_GET_FREE_VOICES = 10000, /* <private only> */
 	BSMP_CTRL_GET_PLAY_VOICES, /* <private only> */
 	BSMP_CTRL_GET_RELEASE_VOICES, /* <private only> */
@@ -115,6 +115,8 @@ typedef enum
 
 	BSMP_CTRL_SET_NO_INSTRUMENT_FIX = 10010,
 	BSMP_CTRL_GET_NO_INSTRUMENT_FIX,
+
+    BSSP_CTRL_SET_USE_BREATH_CONTROL_AS_EXPRESSION,
 
 	BSMP_CTRL_SET_NUMBER_OF_REGIONS = 10020,
 	
@@ -259,6 +261,7 @@ typedef struct {
 	BSMP_ERR (*start) (BSMP_HANDLE handle);
 	BSMP_ERR (*stop) (BSMP_HANDLE handle);
 	BSMP_ERR (*seek) (BSMP_HANDLE handle, unsigned long tick);
+	BSMP_ERR (*seekWithTime) (BSMP_HANDLE handle, float time);
 	int (*isPlaying) (BSMP_HANDLE handle);
 
 	/* export */
@@ -269,6 +272,21 @@ typedef struct {
 	BSMP_ERR (*setFileMemory) (BSMP_HANDLE handle, char *address, unsigned long size);
 	BSMP_ERR (*getFileMemory) (BSMP_HANDLE handle, char **address, unsigned long *size);
 	BSMP_ERR (*getFileInfo) (BSMP_HANDLE handle, int *format, unsigned short *division, unsigned long *totaltick, unsigned long *totaltime);
+
+    /* midi message insertion */
+    void (*insertChannelMessage) (BSMP_HANDLE handle, unsigned char port, unsigned char status, unsigned char data1, unsigned char data2);
+    void (*insertSystemExclusiveMessage) (BSMP_HANDLE handle, unsigned char port, unsigned char status, const unsigned char *data, int size);
+
+    /* engine */
+    unsigned char (*getRxChannel) (BSMP_HANDLE handle, int module, int part);
+    unsigned char (*getUseForRhythmPart) (BSMP_HANDLE handle, int module, int part);
+    unsigned char (*getProgramChangeMessage) (BSMP_HANDLE handle, int module, int part);
+    unsigned char (*getControlChangeMessage) (BSMP_HANDLE handle, int module, int part, unsigned char control);
+    unsigned char (*getPitchBendSense) (BSMP_HANDLE handle, int module, int part);
+    unsigned char (*getMasterCoarseTune) (BSMP_HANDLE handle, int module, int part);
+    unsigned short (*getMasterFineTune) (BSMP_HANDLE handle, int module, int part);
+    unsigned short (*getPitchBend) (BSMP_HANDLE handle, int module, int part);
+    unsigned char (*getMode) (BSMP_HANDLE handle, int module, int part);
 
 	/* etc */
 	BSMP_ERR (*ctrl) (BSMP_HANDLE handle, BSMP_CTRL ctrl, void *data, int size);
