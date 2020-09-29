@@ -84,8 +84,6 @@
 		E8ADAAE52382E233000EF5E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E8B6E52D1E1DDEDF0028DC71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
 		E8B6E5301E1DDFC30028DC71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
-		E8FCEC2418100DF900FAD134 /* libbsmpd_specification_eng.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = libbsmpd_specification_eng.pdf; sourceTree = "<group>"; };
-		E8FCEC2518100DF900FAD134 /* libbsmpd_specification_jpn.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = libbsmpd_specification_jpn.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,7 +199,6 @@
 		E857CEF8180461D60088D963 /* bssynth */ = {
 			isa = PBXGroup;
 			children = (
-				E8FCEC2318100DF900FAD134 /* document */,
 				E857CEF9180461D60088D963 /* bsmd.h */,
 				E857CEFA180461D60088D963 /* bsmp.h */,
 				E83F598523DA6EB000EC3A3F /* bssynth_key.swift */,
@@ -248,15 +245,6 @@
 				E857CF0D180461DE0088D963 /* GU1.43 Percussion Map.pdf */,
 			);
 			path = "instrument lists";
-			sourceTree = "<group>";
-		};
-		E8FCEC2318100DF900FAD134 /* document */ = {
-			isa = PBXGroup;
-			children = (
-				E8FCEC2418100DF900FAD134 /* libbsmpd_specification_eng.pdf */,
-				E8FCEC2518100DF900FAD134 /* libbsmpd_specification_jpn.pdf */,
-			);
-			path = document;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
