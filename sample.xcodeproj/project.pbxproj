@@ -52,7 +52,6 @@
 		E857CE96180387110088D963 /* sample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "sample-Info.plist"; sourceTree = "<group>"; };
 		E857CEA1180387110088D963 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E857CEA6180387110088D963 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		E857CEAD180387110088D963 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		E857CEC7180387340088D963 /* sample2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sample2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E857CECD180387350088D963 /* sample2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "sample2-Info.plist"; sourceTree = "<group>"; };
 		E857CED8180387350088D963 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -149,7 +148,6 @@
 				E857CE8E180387110088D963 /* Foundation.framework */,
 				E857CE90180387110088D963 /* CoreGraphics.framework */,
 				E857CE92180387110088D963 /* UIKit.framework */,
-				E857CEAD180387110088D963 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
