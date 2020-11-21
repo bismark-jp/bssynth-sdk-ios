@@ -58,10 +58,6 @@ class BssynthPlayer {
             nil,
             bssynth_key
         )
-        if err == BSMP_OK {
-            var regions = Int32(512)
-            err = api.pointee.ctrl(handle, BSMP_CTRL_SET_NUMBER_OF_REGIONS, &regions, regions.byteWidth)
-        }
 
         if err != BSMP_OK {
             print("ERROR - initialize synthesizer")

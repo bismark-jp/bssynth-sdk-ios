@@ -82,8 +82,8 @@ typedef enum
 	BSMD_CTRL_GET_MASTER_TUNE,
 	BSMD_CTRL_SET_SPEED = 20, /* speed control (Int) */
 	BSMD_CTRL_GET_SPEED,
-    BSMD_CTRL_SET_SPEED_ACCURATE, /* speed control (float) */
-    BSMD_CTRL_GET_SPEED_ACCURATE,
+	BSMD_CTRL_SET_SPEED_ACCURATE, /* speed control (float) */
+	BSMD_CTRL_GET_SPEED_ACCURATE,
 
 	BSMD_CTRL_SET_REVERB = 100, /* reverb */
 	BSMD_CTRL_GET_REVERB,
@@ -115,7 +115,7 @@ typedef enum
 	BSMD_CTRL_SET_NO_INSTRUMENT_FIX = 10010,
 	BSMD_CTRL_GET_NO_INSTRUMENT_FIX,
     
-    BSSD_CTRL_SET_USE_BREATH_CONTROL_AS_EXPRESSION,
+	BSMD_CTRL_SET_USE_BREATH_CONTROL_AS_EXPRESSION,
 
 	BSMD_CTRL_SET_NUMBER_OF_REGIONS = 10020,
 
@@ -280,16 +280,16 @@ typedef struct {
 	void (*setChannelMessage) (BSMD_HANDLE handle, unsigned char port, unsigned char status, unsigned char data1, unsigned char data2);
 	void (*setSystemExclusiveMessage) (BSMD_HANDLE handle, unsigned char port, unsigned char status, const unsigned char *data, int size);
 
-    /* engine */
-    unsigned char (*getRxChannel) (BSMD_HANDLE handle, int module, int part);
-    unsigned char (*getUseForRhythmPart) (BSMD_HANDLE handle, int module, int part);
-    unsigned char (*getProgramChangeMessage) (BSMD_HANDLE handle, int module, int part);
-    unsigned char (*getControlChangeMessage) (BSMD_HANDLE handle, int module, int part, unsigned char control);
-    unsigned char (*getPitchBendSense) (BSMD_HANDLE handle, int module, int part);
-    unsigned char (*getMasterCoarseTune) (BSMD_HANDLE handle, int module, int part);
-    unsigned short (*getMasterFineTune) (BSMD_HANDLE handle, int module, int part);
-    unsigned short (*getPitchBend) (BSMD_HANDLE handle, int module, int part);
-    unsigned char (*getMode) (BSMD_HANDLE handle, int module, int part);
+	/* engine */
+	unsigned char (*getRxChannel) (BSMD_HANDLE handle, int module, int part);
+	unsigned char (*getUseForRhythmPart) (BSMD_HANDLE handle, int module, int part);
+	unsigned char (*getProgramChangeMessage) (BSMD_HANDLE handle, int module, int part);
+	unsigned char (*getControlChangeMessage) (BSMD_HANDLE handle, int module, int part, unsigned char control);
+	unsigned char (*getPitchBendSense) (BSMD_HANDLE handle, int module, int part);
+	unsigned char (*getMasterCoarseTune) (BSMD_HANDLE handle, int module, int part);
+	unsigned short (*getMasterFineTune) (BSMD_HANDLE handle, int module, int part);
+	unsigned short (*getPitchBend) (BSMD_HANDLE handle, int module, int part);
+	unsigned char (*getMode) (BSMD_HANDLE handle, int module, int part);
 
 	/* file */
 	BSMD_ERR (*setFile) (BSMD_HANDLE handle, LPCTSTR path);
@@ -299,7 +299,7 @@ typedef struct {
 	BSMD_ERR (*startFilePlay) (BSMD_HANDLE handle);
 	BSMD_ERR (*stopFilePlay) (BSMD_HANDLE handle);
 	BSMD_ERR (*seekFilePlay) (BSMD_HANDLE handle, unsigned long tick);
-    BSMD_ERR (*seekFilePlayWithTime) (BSMD_HANDLE handle, float time);
+	BSMD_ERR (*seekFilePlayWithTime) (BSMD_HANDLE handle, float time);
 	int (*isFilePlaying) (BSMD_HANDLE handle);
 
 	/* etc */

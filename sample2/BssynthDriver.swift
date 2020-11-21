@@ -43,10 +43,6 @@ class BssynthDriver {
             nil,
             bssynth_key
         )
-        if err == BSMD_OK {
-            var regions = Int32(512)
-            err = api.pointee.ctrl(handle, BSMD_CTRL_SET_NUMBER_OF_REGIONS, &regions, regions.byteWidth)
-        }
 
         if err != BSMD_OK {
             print("ERROR - initialize synthesizer")
