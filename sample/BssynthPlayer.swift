@@ -20,7 +20,7 @@ class BssynthPlayer {
     public func initialize() {
         let library = Bundle.main.path(forResource: "GeneralUser GS SoftSynth v1.44", ofType: "sf2")!
 
-        var err = api.pointee.initializeWithSoundLib(
+        let err = api.pointee.initializeWithSoundLib(
             &handle,
             { handle, type, data, user in
                 switch type {
