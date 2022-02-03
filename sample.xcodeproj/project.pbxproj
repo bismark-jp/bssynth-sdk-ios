@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -30,14 +30,39 @@
 		E857CF1A180466390088D963 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E857CF19180466390088D963 /* AudioToolbox.framework */; };
 		E857CF1B180466390088D963 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E857CF19180466390088D963 /* AudioToolbox.framework */; };
 		E857CF1D1804DBFC0088D963 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E857CF1C1804DBFC0088D963 /* AVFoundation.framework */; };
-		E86A9D09180E35C400746BF9 /* libbsmpd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E86A9D07180E35C400746BF9 /* libbsmpd.a */; };
-		E86A9D0A180E35C400746BF9 /* libbsmpd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E86A9D07180E35C400746BF9 /* libbsmpd.a */; };
-		E86A9D0B180E35C400746BF9 /* libbsse.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E86A9D08180E35C400746BF9 /* libbsse.a */; };
-		E86A9D0C180E35C400746BF9 /* libbsse.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E86A9D08180E35C400746BF9 /* libbsse.a */; };
+		E8762F3D27AB7DA300EDF7E8 /* bssynth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8762F3A27AB7D7E00EDF7E8 /* bssynth.xcframework */; };
+		E8762F3E27AB7DA300EDF7E8 /* bssynth.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E8762F3A27AB7D7E00EDF7E8 /* bssynth.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E8762F4027AB7DA600EDF7E8 /* bssynth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8762F3A27AB7D7E00EDF7E8 /* bssynth.xcframework */; };
+		E8762F4127AB7DA600EDF7E8 /* bssynth.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E8762F3A27AB7D7E00EDF7E8 /* bssynth.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E8ADAAE02382D591000EF5E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8ADAADF2382D591000EF5E5 /* AppDelegate.swift */; };
 		E8ADAAE62382E233000EF5E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8ADAAE52382E233000EF5E5 /* ViewController.swift */; };
 		E8B6E5311E1DDFC30028DC71 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8B6E52F1E1DDFC30028DC71 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E8762F3F27AB7DA300EDF7E8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E8762F3E27AB7DA300EDF7E8 /* bssynth.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8762F4227AB7DA700EDF7E8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E8762F4127AB7DA600EDF7E8 /* bssynth.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E802E8B623C5C9740047F018 /* BssynthPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BssynthPlayer.swift; sourceTree = "<group>"; };
@@ -56,8 +81,6 @@
 		E857CECD180387350088D963 /* sample2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "sample2-Info.plist"; sourceTree = "<group>"; };
 		E857CED8180387350088D963 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E857CEDD180387350088D963 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		E857CEF9180461D60088D963 /* bsmd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bsmd.h; sourceTree = "<group>"; };
-		E857CEFA180461D60088D963 /* bsmp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bsmp.h; sourceTree = "<group>"; };
 		E857CEFD180461D60088D963 /* sample.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = sample.mid; sourceTree = "<group>"; };
 		E857CEFF180461DD0088D963 /* CHANGELOG.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CHANGELOG.txt; sourceTree = "<group>"; };
 		E857CF01180461DD0088D963 /* All Night Long.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = "All Night Long.mid"; sourceTree = "<group>"; };
@@ -76,10 +99,7 @@
 		E857CF0F180461DE0088D963 /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		E857CF19180466390088D963 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		E857CF1C1804DBFC0088D963 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		E86A9D07180E35C400746BF9 /* libbsmpd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libbsmpd.a; sourceTree = "<group>"; };
-		E86A9D08180E35C400746BF9 /* libbsse.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libbsse.a; sourceTree = "<group>"; };
-		E8ADAADB2382D557000EF5E5 /* sample2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sample2-Bridging-Header.h"; sourceTree = "<group>"; };
-		E8ADAADE2382D590000EF5E5 /* sample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sample-Bridging-Header.h"; sourceTree = "<group>"; };
+		E8762F3A27AB7D7E00EDF7E8 /* bssynth.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = bssynth.xcframework; sourceTree = "<group>"; };
 		E8ADAADF2382D591000EF5E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8ADAAE52382E233000EF5E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E8B6E52D1E1DDEDF0028DC71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
@@ -92,8 +112,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E857CE91180387110088D963 /* CoreGraphics.framework in Frameworks */,
-				E86A9D09180E35C400746BF9 /* libbsmpd.a in Frameworks */,
-				E86A9D0B180E35C400746BF9 /* libbsse.a in Frameworks */,
+				E8762F4027AB7DA600EDF7E8 /* bssynth.xcframework in Frameworks */,
 				E857CE93180387110088D963 /* UIKit.framework in Frameworks */,
 				E857CE8F180387110088D963 /* Foundation.framework in Frameworks */,
 				E857CF1A180466390088D963 /* AudioToolbox.framework in Frameworks */,
@@ -104,11 +123,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E86A9D0A180E35C400746BF9 /* libbsmpd.a in Frameworks */,
 				E857CEC9180387340088D963 /* CoreGraphics.framework in Frameworks */,
 				E857CECA180387340088D963 /* UIKit.framework in Frameworks */,
 				E857CEC8180387340088D963 /* Foundation.framework in Frameworks */,
-				E86A9D0C180E35C400746BF9 /* libbsse.a in Frameworks */,
+				E8762F3D27AB7DA300EDF7E8 /* bssynth.xcframework in Frameworks */,
 				E857CF1D1804DBFC0088D963 /* AVFoundation.framework in Frameworks */,
 				E857CF1B180466390088D963 /* AudioToolbox.framework in Frameworks */,
 			);
@@ -168,7 +186,6 @@
 			isa = PBXGroup;
 			children = (
 				E857CE96180387110088D963 /* sample-Info.plist */,
-				E8ADAADE2382D590000EF5E5 /* sample-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -191,7 +208,6 @@
 			isa = PBXGroup;
 			children = (
 				E857CECD180387350088D963 /* sample2-Info.plist */,
-				E8ADAADB2382D557000EF5E5 /* sample2-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -199,12 +215,9 @@
 		E857CEF8180461D60088D963 /* bssynth */ = {
 			isa = PBXGroup;
 			children = (
-				E857CEF9180461D60088D963 /* bsmd.h */,
-				E857CEFA180461D60088D963 /* bsmp.h */,
 				E83F598523DA6EB000EC3A3F /* bssynth_key.swift */,
-				E86A9D07180E35C400746BF9 /* libbsmpd.a */,
-				E86A9D08180E35C400746BF9 /* libbsse.a */,
 				E857CEFD180461D60088D963 /* sample.mid */,
+				E8762F3A27AB7D7E00EDF7E8 /* bssynth.xcframework */,
 			);
 			path = bssynth;
 			sourceTree = "<group>";
@@ -257,6 +270,7 @@
 				E857CE87180387110088D963 /* Sources */,
 				E857CE88180387110088D963 /* Frameworks */,
 				E857CE89180387110088D963 /* Resources */,
+				E8762F4227AB7DA700EDF7E8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -274,6 +288,7 @@
 				E857CEC3180387340088D963 /* Sources */,
 				E857CEC4180387340088D963 /* Frameworks */,
 				E857CEC5180387340088D963 /* Resources */,
+				E8762F3F27AB7DA300EDF7E8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -302,7 +317,7 @@
 				};
 			};
 			buildConfigurationList = E857CE86180387110088D963 /* Build configuration list for PBXProject "sample" */;
-			compatibilityVersion = "Xcode 10.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -513,6 +528,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "sample/sample-Info.plist";
@@ -526,7 +542,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.bismark.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "sample/sample-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = app;
@@ -539,6 +554,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "sample/sample-Info.plist";
@@ -552,7 +568,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.bismark.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "sample/sample-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = app;
 			};
@@ -581,7 +596,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.bismark.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "sample2/sample2-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = app;
@@ -607,7 +621,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.bismark.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "sample2/sample2-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = app;
 			};

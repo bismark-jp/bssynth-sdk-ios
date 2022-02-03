@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import bssynth
 
 class BssynthDriver {
 
