@@ -305,7 +305,8 @@
 		E857CE83180387110088D963 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1200;
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
 				ORGANIZATIONNAME = "bismark LLC";
 				TargetAttributes = {
 					E857CE8A180387110088D963 = {
