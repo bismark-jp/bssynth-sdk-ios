@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         do {
             let audioSession = AVAudioSession.sharedInstance()
-            try audioSession.setCategory(.ambient)
+			try audioSession.setCategory(.playback, options: .mixWithOthers)
             try audioSession.setActive(true)
             try audioSession.setPreferredIOBufferDuration(0.005)
         } catch {
