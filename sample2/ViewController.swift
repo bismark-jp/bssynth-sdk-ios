@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+	private let part = UInt8(0)
     private let channel = UInt8(0)
     private var program = UInt8(0)
     private let velocity = UInt8(127)
@@ -43,7 +44,7 @@ class ViewController: UIViewController {
     private func updateProgramChange() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) { [weak self] in
             guard let `self` = self else { return }
-            self.programChangeLabel.text = BssynthDriver.shared.currentProgramName(channel: self.channel)
+            self.programChangeLabel.text = BssynthDriver.shared.currentProgramName(part: self.part)
         }
     }
 

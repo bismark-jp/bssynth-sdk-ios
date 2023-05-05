@@ -19,6 +19,7 @@ class BssynthDriver {
     private var handle: BSMD_HANDLE? = nil
     
     private let port = UInt8(0)
+	private let module = UInt8(0)
 
     public func initialize() {
         let library = Bundle.main.path(forResource: "GeneralUser GS SoftSynth v1.44", ofType: "sf2")!
@@ -120,14 +121,14 @@ class BssynthDriver {
         api.pointee.setChannelMessage(handle, port, status, data1, data2)
     }
 
-    public func currentProgramName(channel: UInt8) -> String {
+    public func currentProgramName(part: UInt8) -> String {
         let data = UnsafeMutableBufferPointer<CChar>.allocate(capacity: 64)
         defer {
           data.deallocate()
         }
         _ = self.api.pointee.ctrl(
             self.handle,
-            BSMD_CTRL(BSMD_CTRL_GET_INSTRUMENT_NAME.rawValue + UInt32(port * 16 + channel)),
+            BSMD_CTRL(BSMD_CTRL_GET_INSTRUMENT_NAME.rawValue + UInt32(module * 16 + part)),
             data.baseAddress!,
             64
         )
