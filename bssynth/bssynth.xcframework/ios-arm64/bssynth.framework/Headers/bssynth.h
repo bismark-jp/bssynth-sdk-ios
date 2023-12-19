@@ -16,5 +16,6 @@ FOUNDATION_EXPORT const unsigned char bssynthVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <bssynth/PublicHeader.h>
 
-#import "bsmp.h"
-#import "bsmd.h"
+#import <bssynth/bsmp.h>
+#import <bssynth/bsmd.h>
+#import <bssynth/version.h>

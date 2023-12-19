@@ -1,6 +1,6 @@
 /* bsmp.h - bssynth MIDI Player Library */
 
-/* Copyright (c) 2002 - 2021 bismark LLC. All rights reserved */
+/* Copyright (c) 2002 - 2023 bismark LLC. All rights reserved */
 
 /*
 modification history
@@ -274,6 +274,7 @@ typedef struct {
 	/* play */
 	BSMP_ERR (*start) (BSMP_HANDLE handle);
 	BSMP_ERR (*stop) (BSMP_HANDLE handle);
+	BSMP_ERR (*stopWithOption) (BSMP_HANDLE handle, int option);
 	BSMP_ERR (*seek) (BSMP_HANDLE handle, unsigned long tick);
 	BSMP_ERR (*seekWithTime) (BSMP_HANDLE handle, float time);
 	int (*isPlaying) (BSMP_HANDLE handle);
