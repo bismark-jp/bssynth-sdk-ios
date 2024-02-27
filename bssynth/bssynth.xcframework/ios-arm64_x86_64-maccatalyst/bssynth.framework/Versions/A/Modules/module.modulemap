@@ -1,0 +1,6 @@
+framework module bssynth {
+  umbrella header "bssynth.h"
+  export *
+
+  module * { export * }
+}

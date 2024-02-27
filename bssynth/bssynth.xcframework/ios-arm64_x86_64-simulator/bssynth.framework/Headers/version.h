@@ -1,6 +1,6 @@
 /* version.h - specify version of bssynth */
 
-/* Copyright (c) 2002 - 2023 bismark LLC. All rights reserved. */
+/* Copyright (c) 2002 - 2024 bismark LLC. All rights reserved. */
 
 /* 
 modification history
@@ -10,6 +10,6 @@ modification history
 #ifndef __INCversionh
 #define __INCversionh
 
-#define BSSYNTH_VERSION "3.4.12"
+#define BSSYNTH_VERSION "3.4.14"
 
 #endif /* __INCversionh */

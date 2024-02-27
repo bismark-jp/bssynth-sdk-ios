@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -54,6 +54,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E8039EF82B8DA4B100408ADA /* example2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = example2.entitlements; sourceTree = "<group>"; };
+		E8039EF92B8DA4BA00408ADA /* example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = example.entitlements; sourceTree = "<group>"; };
 		E8B4A23B2B3C0A8D00A1D80C /* example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8B4A23E2B3C0A8D00A1D80C /* exampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exampleApp.swift; sourceTree = "<group>"; };
 		E8B4A2402B3C0A8D00A1D80C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -63,7 +65,7 @@
 		E8B4A24F2B3C195900A1D80C /* bssynth_key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bssynth_key.swift; sourceTree = "<group>"; };
 		E8B4A2502B3C195900A1D80C /* bsmpd_v3.4_eng.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = bsmpd_v3.4_eng.pdf; sourceTree = "<group>"; };
 		E8B4A2512B3C195900A1D80C /* sample.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = sample.mid; sourceTree = "<group>"; };
-		E8B4A2522B3C195900A1D80C /* bssynth.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = bssynth.xcframework; sourceTree = "<group>"; };
+		E8B4A2522B3C195900A1D80C /* bssynth.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:96ZE479YMT:bismark LLC"; lastKnownFileType = wrapper.xcframework; path = bssynth.xcframework; sourceTree = "<group>"; };
 		E8B4A2582B3C1BAC00A1D80C /* GeneralUser_GS_1.43.rgd */ = {isa = PBXFileReference; lastKnownFileType = file; path = GeneralUser_GS_1.43.rgd; sourceTree = "<group>"; };
 		E8B4A2592B3C1BAC00A1D80C /* GeneralUser GS 1.43.ins */ = {isa = PBXFileReference; lastKnownFileType = text; path = "GeneralUser GS 1.43.ins"; sourceTree = "<group>"; };
 		E8B4A25A2B3C1BAC00A1D80C /* GeneralUser GS 1.43-Drumsets.ins */ = {isa = PBXFileReference; lastKnownFileType = text; path = "GeneralUser GS 1.43-Drumsets.ins"; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 		E8B4A23D2B3C0A8D00A1D80C /* example */ = {
 			isa = PBXGroup;
 			children = (
+				E8039EF92B8DA4BA00408ADA /* example.entitlements */,
 				E8B4A23E2B3C0A8D00A1D80C /* exampleApp.swift */,
 				E8B4A2402B3C0A8D00A1D80C /* ContentView.swift */,
 				E8B4A24C2B3C194F00A1D80C /* BssynthPlayer.swift */,
@@ -199,6 +202,7 @@
 		E8B4A26E2B3C29AA00A1D80C /* example2 */ = {
 			isa = PBXGroup;
 			children = (
+				E8039EF82B8DA4B100408ADA /* example2.entitlements */,
 				E8B4A26F2B3C29AA00A1D80C /* example2App.swift */,
 				E8B4A2712B3C29AA00A1D80C /* ContentView.swift */,
 				E8B4A27E2B3C29F400A1D80C /* BssynthDriver.swift */,
@@ -466,10 +470,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = example/example.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"example/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 96ZE479YMT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -484,6 +489,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.bismark.bssynth.example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -495,10 +502,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = example/example.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"example/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 96ZE479YMT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -513,6 +521,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.bismark.bssynth.example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -524,10 +534,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = example2/example2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"example2/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 96ZE479YMT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -542,6 +553,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.bismark.bssynth.example2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -553,10 +566,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = example2/example2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"example2/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 96ZE479YMT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -571,6 +585,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.bismark.bssynth.example2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
